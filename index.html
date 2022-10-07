@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Registration Form</title>
+	<style>
+		.container{
+			position: absolute;
+			margin: 10% 30% 0% 30%;
+			background: white;
+			width: 40%;
+			border-radius: 15px;
+			border-style: none;
+		}
+		#firstlast{
+			display: inline-flex;
+			margin-left: 20%;
+			height: 40px;
+			width: 200px;
+		}
+		#usermailpass{
+			margin-top: 5%;
+			margin-left: 20%;
+			width: 200px;
+		}
+		#agree{
+			margin-top: 3%;
+			margin-left: 20%;
+		}
+		#submitId{
+			margin-left: 20%;
+		}
+		div label h2{
+			margin-left: 40%;
+		}
+		div label p{
+			margin-left: 38%;
+		}
+		input[type=text]{
+			background-color: #DCDEE6;
+			border-style: none;
+			height: 40px;
+			width: 335px;
+			border-radius: 5px;
+		}
+		input[type=email]{
+			background-color: #DCDEE6;
+			border-style: none;
+			height: 40px;
+			width: 335px;
+			margin-top: 6%;
+			border-radius: 5px;
+		}
+		input[type=password]{
+			background-color: #DCDEE6;
+			border-style: none;
+			margin-top: 6%;
+			height: 40px;
+			width: 335px;
+			border-radius: 5px;
+		}
+		input[type=submit]{
+			background-color: #35A4FB;
+			color: white;
+			font-size: 18px;
+			border-style: none;
+			margin-top: 6%;
+			height: 40px;
+			width: 335px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		::placeholder{
+			font-weight: bolder;
+		}
+		h2{
+			padding-top: 5%;
+			font-family:Arial ;
+			opacity: 0.7;
+		}
+		p{
+			font-family:Arial ;
+			opacity: 0.7;
+		}
+		body,html{
+  			height: 100%; 
+  		}
+  		*{
+  			box-sizing: content-box;
+  		}
+		.imgdiv{
+			background: url(backgroundimage.jpg);
+  			height: 100%; 
+			background-position: center;
+			background-size: cover;		
+		}
+          .icon {
+          	padding-top: 20px;
+            padding-left: 300px;
+            color:#9E9E9E;
+            min-width: 50px;
+            text-align: center;
+        }
+       .input-icon{
+       		position: relative;
+       	}
+       	.input-icon i{
+       		position: absolute;
+       	}
+	</style>
+</head>
+<body >
+	<div class = "imgdiv">
+		<form class = "container" action="registration" method="post">
+			<label><h2>Register</h2></label>
+			<label><p>Fill out this form</p></label>
+			<div id = "firstlast">
+				<input type="text" name="firstname" placeholder="First Name">&nbsp&nbsp
+				<input type="text" name="lastname" placeholder="Last Name">
+			</div>
+			<div id = "usermailpass">
+				<div class = "input-icon">
+					<i class ="fa fa-user icon"></i>
+					<input type="text" name="username"placeholder="Username">
+				</div>
+				<div class = "input-icon">
+					<i class ="fa fa-envelope icon"></i>
+					<input type="email" name="email"placeholder="E-mail Address">
+				</div>
+				<div class = "input-icon">
+					<i class ="fa fa-key icon"></i>
+					<input type="password" name="password"placeholder="Password">
+				</div>
+			</div>
+			<div id="agree">
+				<input type="checkbox" id="check" name="checkbox" value="agree" required>
+	  			<label for="check"> I agree and Continue</label>
+			</div>
+			<div id ="submitId">
+				<input type="submit" name="submit" value="Create Account"><br><br>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
